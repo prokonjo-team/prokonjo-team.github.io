@@ -392,8 +392,7 @@ ul, ol { margin: 0 0 1em; padding-left: 1.4em; }
 .tester-step__body p { color: var(--c-text-sub); margin: 0; }
 .tester-step__body .btn { margin-bottom: 4px; }
 .tester-step__body .callout { align-self: stretch; }
-.tester-step__images { display: grid; gap: 12px; grid-template-columns: 1fr; margin-top: 8px; align-self: stretch; }
-@media (min-width: 600px) { .tester-step__images { grid-template-columns: 1fr 1fr; } }
+.tester-step__images { display: grid; gap: 16px; grid-template-columns: 1fr; margin-top: 8px; align-self: stretch; }
 .tester-step__images img { border-radius: var(--radius); box-shadow: var(--shadow-sm); border: 1px solid var(--c-border); }
 
 .callout {
