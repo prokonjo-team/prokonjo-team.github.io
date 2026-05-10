@@ -3,230 +3,418 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>エクスプローラーズ｜プロ根性</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Simple line icons-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
-    <!-- Google tag (gtag.js) -->
+    <title>エクスプロラーズ｜散歩を冒険にする街歩きゲーム</title>
+    <meta name="description" content="散歩を冒険にする街歩きゲーム「エクスプロラーズ」。写真をヒントに、知らない場所を歩いて目指そう。1プレイ約15分・無料・課金要素なし。" />
+    <meta name="author" content="プロ根性 (prokonjo)" />
+    <meta name="theme-color" content="#FACD00" />
+    <link rel="canonical" href="https://prokonjo.com/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="エクスプロラーズ" />
+    <meta property="og:title" content="エクスプロラーズ｜散歩を冒険にする街歩きゲーム" />
+    <meta property="og:description" content="写真をヒントに、知らない場所を歩いて目指す街歩きゲーム。1プレイ約15分・無料・課金要素なし。" />
+    <meta property="og:url" content="https://prokonjo.com/" />
+    <meta property="og:image" content="https://prokonjo.com/assets/img/ogp.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="ja_JP" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="エクスプロラーズ｜散歩を冒険にする街歩きゲーム" />
+    <meta name="twitter:description" content="写真をヒントに、知らない場所を歩いて目指す街歩きゲーム。1プレイ約15分・無料・課金要素なし。" />
+    <meta name="twitter:image" content="https://prokonjo.com/assets/img/ogp.jpg" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/css/styles.css" />
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "エクスプロラーズ",
+        "description": "散歩を冒険にする街歩きゲーム。写真をヒントに知らない場所へ歩いて目指す、1プレイ約15分の探索体験。",
+        "url": "https://prokonjo.com/",
+        "applicationCategory": "GameApplication",
+        "operatingSystem": "iOS",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "JPY"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "プロ根性",
+          "url": "https://prokonjo.com/"
+        }
+      }
+    </script>
+
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P3YYZEG46Z"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-P3YYZEG46Z');
     </script>
   </head>
-  <body id="page-top">
-    <!-- Top Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-warning fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#page-top">エクスプロラーズ</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+  <body>
+    <!-- ==================== Header ==================== -->
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="site-header__brand" href="#top" aria-label="エクスプロラーズ ホーム">
+          <span class="site-header__brand-mark" aria-hidden="true">🧭</span>
+          <span>エクスプロラーズ</span>
+        </a>
+        <nav class="site-nav" aria-label="メインメニュー">
+          <a href="#about">特徴</a>
+          <a href="#how">遊び方</a>
+          <a href="#awards">実績</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">お問い合わせ</a>
+        </nav>
+        <a class="btn site-header__cta" href="#download">
+          ダウンロード
+        </a>
+        <button class="menu-btn" type="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="メニューを開く">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#about">どんなゲーム？</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">遊び方</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#awards">実績</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#members">チーム</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">お問い合わせ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/privacy-policy/" target="_blank">プライバシーポリシー</a>
-            </li>
-          </ul>
-        </div>
       </div>
-    </nav>
-    <!-- Header-->
-    <header class="masthead d-flex align-items-center">
-      <div class="container px-4 px-lg-5 text-center">
-        <div style="padding-bottom: 2rem" class="align-items-center">
-          <div class="d-flex flex-column align-items-center">
-            <img class="img-fluid" src="/assets/img/game-logo.png" alt="エクスプロラーズ" style="max-width: 680px; width: 100%; padding-bottom: 1rem;" />
-            <a href="https://apps.apple.com/jp/app/%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%97%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC%E3%82%BA/id6477759574?itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px">
-              <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/ja-jp?size=250x83&amp;releaseDate=1715040000" alt="Download on the App Store" style="border-radius: 13px; width: 250px; height: 83px" />
-            </a>
-            <a href="https://play.google.com/store/apps/details?id=com.prokonjo.explores" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px">
-              <img src="https://play.google.com/intl/ja/badges/static/images/badges/ja_badge_web_generic.png" alt="Google Play で手に入れよう" style="border-radius: 13px; height: 83px" />
-            </a>
-            <!--
-            <a href="/tester-android" class="mt-4 mb-4 btn btn-primary btn-xl" style="height: 83px; line-height: 83px; padding: 0 20px;">Androidの方はこちらから！</a>
-            -->
-            <a href="https://docs.google.com/forms/d/1sWQDp1t_8PnzxENLO9BHw-IYn2yrNgumjZMQWQWam8I" class="btn btn-primary btn-xl" target="_blank"> アンケート調査への<br />ご協力お願いします！ </a>
-          </div>
-        </div>
+      <div id="mobile-menu" data-open="false">
+        <a href="#about">特徴</a>
+        <a href="#how">遊び方</a>
+        <a href="#awards">実績</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">お問い合わせ</a>
+        <a href="/privacy-policy/">プライバシーポリシー</a>
       </div>
     </header>
-    <!-- About-->
-    <section class="content-section bg-light" id="about">
-      <div class="container px-4 px-lg-5 text-center">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-          <div class="col-lg-10">
-            <h2>写真を頼りにゴールを目指せ！</h2>
-            <img src="assets/img/game-desc.png" alt="ゲーム説明の画像" class="img-fluid" />
-            <p class="lead mb-5">エクスプロラーズは、写真という少ない情報を手がかりにして、実際に歩いて目的地を目指す街歩き探索ゲームです。</p>
-            <h2>遊び方を動画で見る</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ldIJdk3zwHY?si=jwntDJV8pnRAHKio" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <!-- ==================== Hero ==================== -->
+    <section class="hero" id="top">
+      <div class="container hero__inner">
+        <div>
+          <span class="hero__eyebrow">🧭 街歩き探索ゲーム</span>
+          <h1 class="hero__title">散歩を、<em>冒険</em>にする。</h1>
+          <p class="hero__sub">
+            写真をヒントに、知らない場所を歩いて目指そう。<br />
+            1プレイ約15分。無料・課金要素なしの街歩きゲームです。
+          </p>
+          <div class="hero__cta">
+            <a class="app-badge" href="https://apps.apple.com/jp/app/%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%97%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC%E3%82%BA/id6477759574" aria-label="App Store からダウンロード">
+              <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/ja-jp?size=250x83&amp;releaseDate=1715040000" alt="Download on the App Store" />
+            </a>
+            <a class="btn btn--secondary" href="/tester-android">Android（テスター募集中）</a>
+          </div>
+          <p class="hero__note">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>
+            無料 ／ 課金要素なし ／ 広告なし
+          </p>
+        </div>
+        <div class="hero__visual">
+          <img src="/assets/img/game-desc.jpg" alt="エクスプロラーズのプレイイメージ" width="1200" height="676" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== Empathy ==================== -->
+    <section class="section section--alt" id="about">
+      <div class="container">
+        <h2 class="section__title">こんな散歩、飽きてませんか？</h2>
+        <p class="section__lead">運動のために歩こうとしても、毎日同じ道だと続かない。<br />「目的のある歩き」があれば、もう少し続くかもしれない。</p>
+        <div class="card-grid">
+          <div class="empathy-card">
+            <div class="empathy-card__icon" aria-hidden="true">🛣️</div>
+            <h3>毎日同じ道で飽きる</h3>
+            <p>家と駅の往復。気づけば景色を見ずに歩いてる。</p>
+          </div>
+          <div class="empathy-card">
+            <div class="empathy-card__icon" aria-hidden="true">📉</div>
+            <h3>習慣にならず続かない</h3>
+            <p>「歩こう」と思っても、3日経つと忘れてしまう。</p>
+          </div>
+          <div class="empathy-card">
+            <div class="empathy-card__icon" aria-hidden="true">🤔</div>
+            <h3>歩く目的がない</h3>
+            <p>運動のためだけだと、どうにもモチベが続かない。</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Services-->
-    <section class="content-section" id="services">
-      <div class="container px-4 px-lg-5 text-center">
-        <h2>時間を選ぶ</h2>
-        <img src="assets/img/game-play0.png" alt="ゲームのプレイ画面0" />
-        <p>歩きたいおよその時間を選ぼう！選択された時間によって、目的地が自動的に決まります。</p>
-      </div>
-      <div class="container px-4 px-lg-5 text-center">
-        <h2>目的地を推測する</h2>
-        <img src="assets/img/game-play1.png" alt="ゲームのプレイ画面1" />
-        <p>「目的地周辺の写真」と「現在地や目的地が表示された地図」が表示されます。ゲームを始めると隠されてしまうので記憶しておこう！</p>
-      </div>
-      <div class="container px-4 px-lg-5 text-center">
-        <h2>探索を始める</h2>
-        <img src="assets/img/game-play2.png" alt="ゲームのプレイ画面2" />
-        <p>写真や地図の記憶を頼りに、目的地まで歩こう！アプリでは目的地までの距離・歩行時間・目的地周辺の地図が表示されます。でも地図は表示されません！</p>
+    <!-- ==================== Value ==================== -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title">エクスプロラーズなら、<br />散歩が冒険になる。</h2>
+        <p class="section__lead">写真というヒントだけで、知らない場所を目指す。<br />毎回違うゴール。15分で完結。「歩く理由」が、ここにある。</p>
+        <div class="card-grid">
+          <div class="value-card">
+            <div class="value-card__badge">01</div>
+            <h3>毎回ちがうゴール</h3>
+            <p>選んだ時間に応じて、その都度ランダムに目的地が決まる。同じ場所に飽きることはない。</p>
+          </div>
+          <div class="value-card">
+            <div class="value-card__badge">02</div>
+            <h3>写真ヒントで冒険感</h3>
+            <p>地図ではなく、目的地周辺の写真を頼りに歩く。「あの建物どこかで見たな…」が冒険のはじまり。</p>
+          </div>
+          <div class="value-card">
+            <div class="value-card__badge">03</div>
+            <h3>15分で完結</h3>
+            <p>通勤帰り、休憩中、休日の散歩。やりたい時に始めて、やめたい時に切り上げられる軽さ。</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Call to Action-->
-    <section class="content-section bg-primary text-white">
-      <div class="container px-4 px-lg-5 text-center">
-        <h2 class="mb-4">アプリインストールはこちらから！</h2>
-        <div class="d-flex flex-column align-items-center">
-          <a href="https://apps.apple.com/jp/app/%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%97%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC%E3%82%BA/id6477759574?itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px">
-            <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/ja-jp?size=250x83&amp;releaseDate=1715040000" alt="Download on the App Store" style="border-radius: 13px; width: 250px; height: 83px" />
+    <!-- ==================== How ==================== -->
+    <section class="section section--surface" id="how">
+      <div class="container">
+        <h2 class="section__title">遊び方は、3ステップ</h2>
+        <p class="section__lead">アプリを開いてから、街に出るまで30秒。</p>
+        <div class="steps">
+          <div class="step">
+            <div class="step__num">1</div>
+            <img class="step__img" src="/assets/img/game-play0.png" alt="時間選択画面" loading="lazy" />
+            <h3>時間を選ぶ</h3>
+            <p>歩きたい時間を選択。「15分」「30分」など、その時の気分に合わせて。</p>
+          </div>
+          <div class="step">
+            <div class="step__num">2</div>
+            <img class="step__img" src="/assets/img/game-play1.png" alt="目的地周辺の写真と地図の確認画面" loading="lazy" />
+            <h3>目的地を覚える</h3>
+            <p>目的地周辺の写真と地図を、ゲーム開始前にしっかり確認。スタートしたら隠れます。</p>
+          </div>
+          <div class="step">
+            <div class="step__num">3</div>
+            <img class="step__img" src="/assets/img/game-play2.png" alt="探索中のゲーム画面" loading="lazy" />
+            <h3>記憶を頼りに歩く</h3>
+            <p>残り時間と距離だけを頼りに、目的地まで歩こう。「あっ、あの写真の景色だ！」</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== Video ==================== -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title">動画で見るエクスプロラーズ</h2>
+        <p class="section__lead">実際のプレイ画面と街歩きの様子をどうぞ。</p>
+        <div class="video-wrap">
+          <iframe src="https://www.youtube.com/embed/ldIJdk3zwHY?si=jwntDJV8pnRAHKio" title="エクスプロラーズの遊び方紹介動画" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== Awards ==================== -->
+    <section class="section section--alt" id="awards">
+      <div class="container">
+        <h2 class="section__title">受賞歴</h2>
+        <p class="section__lead">学生時代から積み重ねてきたコンテスト実績。</p>
+        <div class="awards">
+          <article class="award">
+            <img src="/assets/img/award-gikuhaku.jpg" alt="技育博 企業賞 受賞" loading="lazy" />
+            <div class="award__body">
+              <span class="award__tag">企業賞</span>
+              <h3>技育博</h3>
+              <p>サポーターズ主催の技育博において、エクスプロラーズが企業賞を受賞しました。</p>
+              <a class="award__link" href="https://x.com/geek_pjt/status/1789225529109057540" target="_blank" rel="noopener noreferrer">受賞ポストを見る →</a>
+            </div>
+          </article>
+          <article class="award">
+            <img src="/assets/img/award-wakayama.jpg" alt="和歌山イノベーションプログラミングコンテスト 最優秀賞 受賞" loading="lazy" />
+            <div class="award__body">
+              <span class="award__tag">最優秀賞</span>
+              <h3>和歌山イノベーションプログラミングコンテスト</h3>
+              <p>和歌山に存在する課題を解決するスマホアプリ企画で最優秀賞を受賞。</p>
+              <a class="award__link" href="https://wakayama-innovation-lab.relic.co.jp/" target="_blank" rel="noopener noreferrer">主催情報を見る →</a>
+            </div>
+          </article>
+          <article class="award">
+            <img src="/assets/img/award-iizuka.jpg" alt="e-ZUKAスマートアプリコンテスト2023 市長賞 受賞" loading="lazy" />
+            <div class="award__body">
+              <span class="award__tag">市長賞 + 企業賞</span>
+              <h3>e-ZUKAスマートアプリコンテスト2023</h3>
+              <p>福岡県飯塚市主催のコンテストで、飯塚市長賞と企業賞をダブル受賞。</p>
+              <a class="award__link" href="http://e-zuka.info/2023/resurt.html" target="_blank" rel="noopener noreferrer">大会結果を見る →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== Members ==================== -->
+    <section class="section" id="members">
+      <div class="container">
+        <h2 class="section__title">開発チーム</h2>
+        <p class="section__lead">「散歩を冒険にする」を本気で作っている、4人のチームです。</p>
+        <div class="members">
+          <div class="member">
+            <img src="/assets/img/member-akamatsu.png" alt="赤松汰輝" loading="lazy" width="96" height="96" />
+            <h3>赤松汰輝</h3>
+            <p>代表 / エンジニア</p>
+            <div class="member__links">
+              <a href="https://www.wantedly.com/id/akamatsu_taiki" target="_blank" rel="noopener noreferrer" aria-label="Wantedly プロフィール">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg>
+              </a>
+              <a href="https://github.com/Taiki-sub" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A11.5 11.5 0 00.5 12a11.5 11.5 0 007.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.32-1.27-1.67-1.27-1.67-1.04-.7.08-.69.08-.69 1.15.08 1.76 1.18 1.76 1.18 1.02 1.74 2.68 1.24 3.34.95.1-.74.4-1.24.73-1.53-2.55-.29-5.24-1.27-5.24-5.66 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.17a10.93 10.93 0 015.74 0c2.19-1.48 3.15-1.17 3.15-1.17.62 1.58.23 2.75.11 3.04.74.8 1.18 1.82 1.18 3.07 0 4.4-2.69 5.36-5.25 5.65.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.79.55A11.5 11.5 0 0023.5 12 11.5 11.5 0 0012 .5z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="member">
+            <img src="/assets/img/member-chang.png" alt="張珠煐" loading="lazy" width="96" height="96" />
+            <h3>張珠煐</h3>
+            <p>デザイナー</p>
+          </div>
+          <div class="member">
+            <img src="/assets/img/siteTop4.jpg" alt="楠本健人" loading="lazy" width="96" height="96" />
+            <h3>楠本健人</h3>
+            <p>デザイナー</p>
+          </div>
+          <div class="member">
+            <img src="/assets/img/member-hayashi.png" alt="林慎一郎" loading="lazy" width="96" height="96" />
+            <h3>林慎一郎</h3>
+            <p>エンジニア</p>
+            <div class="member__links">
+              <a href="https://www.github.com/hashin2425" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A11.5 11.5 0 00.5 12a11.5 11.5 0 007.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.32-1.27-1.67-1.27-1.67-1.04-.7.08-.69.08-.69 1.15.08 1.76 1.18 1.76 1.18 1.02 1.74 2.68 1.24 3.34.95.1-.74.4-1.24.73-1.53-2.55-.29-5.24-1.27-5.24-5.66 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.17a10.93 10.93 0 015.74 0c2.19-1.48 3.15-1.17 3.15-1.17.62 1.58.23 2.75.11 3.04.74.8 1.18 1.82 1.18 3.07 0 4.4-2.69 5.36-5.25 5.65.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.79.55A11.5 11.5 0 0023.5 12 11.5 11.5 0 0012 .5z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FAQ ==================== -->
+    <section class="section section--surface" id="faq">
+      <div class="container">
+        <h2 class="section__title">よくある質問</h2>
+        <p class="section__lead">プレイ前に気になる点をまとめました。</p>
+        <div class="faq">
+          <details>
+            <summary>本当に無料？課金要素はありますか？</summary>
+            <p>完全無料です。ガチャやサブスクなど、いかなる課金要素もありません。広告も今のところ表示していません。</p>
+          </details>
+          <details>
+            <summary>1プレイにかかる時間は？</summary>
+            <p>15分・20分・30分などの中から、その時の気分に合わせて選べます。短い空き時間でもガッツリ歩きたい休日でも、両方行けます。</p>
+          </details>
+          <details>
+            <summary>どんな場所で遊べますか？</summary>
+            <p>街中であれば基本どこでも楽しめます。GPS情報を元に、現在地から歩いて辿り着ける範囲のゴールが自動生成されます。</p>
+          </details>
+          <details>
+            <summary>通信量・バッテリー消費はどのくらい？</summary>
+            <p>位置情報を継続的に取得するので、長時間プレイするとバッテリーは消費しやすくなります。通信量は地図表示分が中心で、過大ではありません。</p>
+          </details>
+          <details>
+            <summary>安全に遊ぶための注意点は？</summary>
+            <p>歩きながらの操作にはくれぐれもご注意ください。横断歩道の手前では立ち止まる、夜道や人気のないエリアは避ける、など基本的な散歩の安全ルールを必ず守ってください。</p>
+          </details>
+          <details>
+            <summary>Android 版はありますか？</summary>
+            <p>現在、Google Play 公開に向けてテスターさんを募集中です。<a href="/tester-android">こちらのページ</a>からテスター登録できます。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== Final CTA ==================== -->
+    <section class="section cta-section" id="download">
+      <div class="container container--narrow">
+        <h2>さあ、散歩を冒険にしよう。</h2>
+        <p>今すぐダウンロードして、知らない場所への一歩を踏み出そう。</p>
+        <div class="hero__cta" style="justify-content: center;">
+          <a class="app-badge" href="https://apps.apple.com/jp/app/%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%97%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC%E3%82%BA/id6477759574" aria-label="App Store からダウンロード">
+            <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/ja-jp?size=250x83&amp;releaseDate=1715040000" alt="Download on the App Store" />
           </a>
-          <a href="/tester-android" class="mt-4 mb-4 btn btn-secondary btn-xl" style="height: 83px; line-height: 83px; padding: 0 20px;">Androidの方はこちらから！</a>
-          <a href="https://docs.google.com/forms/d/1sWQDp1t_8PnzxENLO9BHw-IYn2yrNgumjZMQWQWam8I" class="btn btn-secondary btn-xl" target="_blank">アンケート調査への<br />ご協力お願いします！ </a>
+          <a class="btn" href="/tester-android" style="background:#fff;">Android（テスター募集中）</a>
         </div>
       </div>
     </section>
 
-    <!-- Awards -->
-    <section class="content-section bg-light" id="awards">
-      <div class="container px-4 px-lg-5 text-center">
-        <h2>実績</h2>
-        <a href="https://x.com/geek_pjt/status/1789225529109057540"><h3>[企業賞]技育博</h3></a>
-        <img src="/assets/img/award-gikuhaku.jpg" alt="企業賞" class="img-fluid" />
-        <p class="lead mb-5">サポーターズ主催の技育博において、エクスプローラーズが企業賞を受賞</p>
-        <a href="https://wakayama-innovation-lab.relic.co.jp/"><h3>[最優秀賞]和歌山イノベーションプログラミングコンテスト</h3></a>
-        <img src="/assets/img/award-wakayama.jpg" alt="最優秀賞" class="img-fluid" />
-        <p class="lead mb-5">和歌山イノベーションプログラミングコンテストにおいて、和歌山に存在する課題を解決するためのスマートフォンアプリを企画制作し、最優秀賞を受賞</p>
-        <a href="http://e-zuka.info/2023/resurt.html"><h3>[市長賞]e-ZUKAスマートアプリコンテスト2023</h3></a>
-        <img src="/assets/img/award-iizuka.jpg" alt="市長賞" class="img-fluid" />
-        <p class="lead mb-5">福岡県飯塚市が主催するe-ZUKAスマートアプリコンテスト2023において、飯塚の課題を解決するようなスマートフォンアプリを企画制作し、「飯塚市長賞」と「企業賞」を受賞</p>
-      </div>
-    </section>
-
-    <!-- Introduce members -->
-    <div class="container mt-5" id="members">
-      <h2 class="text-center">開発チーム</h2>
-      <div class="row d-flex justify-content-center gap-3">
-        <div class="flex-fill" style="max-width: 300px">
-          <div class="card">
-            <img src="assets/img/member-akamatsu.png" class="card-img-top" alt="メンバー1の写真" />
-            <div class="card-body">
-              <h5 class="card-title">赤松汰輝</h5>
-              <p class="card-text">代表、エンジニア</p>
-              <p class="card-text">akmatsutaiki@gmail.com</p>
-              <a href="https://www.wantedly.com/id/akamatsu_taiki" class="btn btn-primary">ポートフォリオ</a>
-              <a href="https://github.com/Taiki-sub" class="btn btn-primary" target="_blank ">GitHub</a>
-            </div>
-          </div>
-        </div>
-        <div class="flex-fill" style="max-width: 300px">
-          <div class="card">
-            <img src="assets/img/member-chang.png" class="card-img-top" alt="メンバー2の写真" />
-            <div class="card-body">
-              <h5 class="card-title">張珠煐</h5>
-              <p class="card-text">デザイナー</p>
-              <p class="card-tex">Ccy130609@icloud.com</p>
-            </div>
-          </div>
-        </div>
-        <div class="flex-fill" style="max-width: 300px">
-          <div class="card">
-            <img src="assets/img/siteTop4.jpg" class="card-img-top" alt="メンバー3の写真" />
-            <div class="card-body">
-              <h5 class="card-title">楠本健人</h5>
-              <p class="card-text">デザイナー</p>
-              <p class="card-text">kusumoto60266099@outlook.jp</p>
-            </div>
-          </div>
-        </div>
-        <div class="flex-fill" style="max-width: 300px">
-          <div class="card">
-            <img src="assets/img/member-hayashi.png" class="card-img-top" alt="メンバー3の写真" />
-            <div class="card-body">
-              <h5 class="card-title">林慎一郎</h5>
-              <p class="card-text">エンジニア</p>
-              <p class="card-text">hayashi852job@outlook.jp</p>
-              <a href="https://www.github.com/hashin2425" class="btn btn-primary" target="_blank">GitHub</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Contact -->
-    <section id="contact" class="content-section bg-light">
-      <div class="container mt-5" id="contact">
-        <h2 class="text-center">お問い合わせ</h2>
-        <div class="row d-flex justify-content-center">
-          <div class="col-lg-6">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">お問い合わせ先</h5>
-                <p class="card-text">ご質問やお問い合わせがありましたら、以下のメールアドレスまでご連絡ください。</p>
-                <p class="card-text">メールアドレス: akmatsutaiki@gmail.com</p>
-              </div>
-            </div>
-          </div>
+    <!-- ==================== Contact ==================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <h2 class="section__title">お問い合わせ</h2>
+        <p class="section__lead">不具合報告、ご感想、コラボのご相談など、お気軽にどうぞ。</p>
+        <div class="contact-card">
+          <p>以下のボタンからメールでご連絡ください。</p>
+          <a class="btn btn--lg" href="mailto:akmatsutaiki@gmail.com?subject=%E3%80%90%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%97%E3%83%AD%E3%83%A9%E3%83%BC%E3%82%BA%E3%80%91%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">
+            メールで問い合わせる
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- Footer-->
-    <footer class="footer text-center">
-      <div class="container px-4 px-lg-5">
-        <ul class="list-inline mb-5">
-          <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white" href="https://github.com/prokonjo-team"><i class="icon-social-github"></i></a>
-          </li>
-        </ul>
-        <p class="text-muted small mb-0">Copyright &copy; プロ根性 2024</p>
+    <!-- ==================== Footer ==================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer__grid">
+          <div>
+            <div class="site-footer__brand">エクスプロラーズ</div>
+            <p class="site-footer__brand-line">散歩を冒険にする街歩きゲーム。<br />by プロ根性 (prokonjo)</p>
+          </div>
+          <div class="site-footer__col">
+            <h4>サイト</h4>
+            <ul>
+              <li><a href="#about">特徴</a></li>
+              <li><a href="#how">遊び方</a></li>
+              <li><a href="#awards">実績</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="site-footer__col">
+            <h4>運営情報</h4>
+            <ul>
+              <li><a href="/privacy-policy/">プライバシーポリシー</a></li>
+              <li><a href="#contact">お問い合わせ</a></li>
+              <li><a href="/tester-android">Android テスター</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="site-footer__bottom">
+          <span>© 2024-2026 プロ根性 (prokonjo). All rights reserved.</span>
+          <div class="site-footer__social">
+            <a href="https://github.com/prokonjo-team" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A11.5 11.5 0 00.5 12a11.5 11.5 0 007.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.32-1.27-1.67-1.27-1.67-1.04-.7.08-.69.08-.69 1.15.08 1.76 1.18 1.76 1.18 1.02 1.74 2.68 1.24 3.34.95.1-.74.4-1.24.73-1.53-2.55-.29-5.24-1.27-5.24-5.66 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.17a10.93 10.93 0 015.74 0c2.19-1.48 3.15-1.17 3.15-1.17.62 1.58.23 2.75.11 3.04.74.8 1.18 1.82 1.18 3.07 0 4.4-2.69 5.36-5.25 5.65.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.79.55A11.5 11.5 0 0023.5 12 11.5 11.5 0 0012 .5z"/></svg>
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
 
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+    <script>
+      // Mobile menu toggle
+      (function() {
+        var btn = document.querySelector('.menu-btn');
+        var menu = document.getElementById('mobile-menu');
+        if (!btn || !menu) return;
+        btn.addEventListener('click', function() {
+          var open = menu.dataset.open === 'true';
+          menu.dataset.open = open ? 'false' : 'true';
+          btn.setAttribute('aria-expanded', String(!open));
+        });
+        // Close on link tap
+        menu.querySelectorAll('a').forEach(function(a) {
+          a.addEventListener('click', function() {
+            menu.dataset.open = 'false';
+            btn.setAttribute('aria-expanded', 'false');
+          });
+        });
+      })();
+    </script>
   </body>
 </html>
