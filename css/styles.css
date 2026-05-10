@@ -387,9 +387,12 @@ ul, ol { margin: 0 0 1em; padding-left: 1.4em; }
   font-family: var(--font-heading); font-weight: 800; font-size: 1.2rem;
   box-shadow: 0 3px 0 var(--c-primary-dark);
 }
-.tester-step__body h3 { font-size: 1.1rem; margin-bottom: 0.6em; }
-.tester-step__body p { color: var(--c-text-sub); margin: 0 0 1em; }
-.tester-step__images { display: grid; gap: 12px; grid-template-columns: 1fr; margin-top: 16px; }
+.tester-step__body { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; }
+.tester-step__body h3 { font-size: 1.1rem; margin: 0; }
+.tester-step__body p { color: var(--c-text-sub); margin: 0; }
+.tester-step__body .btn { margin-bottom: 4px; }
+.tester-step__body .callout { align-self: stretch; }
+.tester-step__images { display: grid; gap: 12px; grid-template-columns: 1fr; margin-top: 8px; align-self: stretch; }
 @media (min-width: 600px) { .tester-step__images { grid-template-columns: 1fr 1fr; } }
 .tester-step__images img { border-radius: var(--radius); box-shadow: var(--shadow-sm); border: 1px solid var(--c-border); }
 
