@@ -75,20 +75,31 @@ ul, ol { margin: 0 0 1em; padding-left: 1.4em; }
   -webkit-backdrop-filter: saturate(160%) blur(10px);
   border-bottom: 1px solid var(--c-border);
 }
-.site-header__inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
-.site-header__brand { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-heading); font-weight: 800; font-size: 1.1rem; color: var(--c-text); }
-.site-header__brand-mark { width: 32px; height: 32px; border-radius: 50%; background: var(--c-primary); display: inline-flex; align-items: center; justify-content: center; font-size: 1.05rem; }
+.site-header__inner { display: flex; align-items: center; gap: 10px; height: 64px; }
+.site-header__brand { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-heading); font-weight: 800; font-size: 1.05rem; color: var(--c-text); white-space: nowrap; flex-shrink: 0; }
+.site-header__brand-mark { width: 30px; height: 30px; border-radius: 50%; background: var(--c-primary); display: inline-flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0; }
 .site-nav { display: none; align-items: center; gap: 28px; }
 .site-nav a { color: var(--c-text-sub); font-weight: 600; font-size: 0.92rem; transition: color 0.18s; }
 .site-nav a:hover { color: var(--c-text); }
-.site-header__cta { display: none; }
-.menu-btn { width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center; border-radius: 8px; }
+
+/* Header download CTA: compact icon pill on mobile, full label from 768px up.
+   Icon-only on mobile keeps the header from overflowing in any language. */
+.site-header__cta { display: inline-flex; flex-shrink: 0; margin-left: auto; }
+.site-header .site-header__cta { padding: 0; width: 40px; height: 40px; border-radius: 12px; box-shadow: 0 3px 0 var(--c-primary-dark); }
+.site-header__cta-icon { width: 20px; height: 20px; flex-shrink: 0; }
+.site-header__cta-label { display: none; white-space: nowrap; }
+
+.menu-btn { width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center; border-radius: 8px; flex-shrink: 0; }
 .menu-btn:hover { background: var(--c-surface); }
 .menu-btn svg { width: 22px; height: 22px; }
 @media (min-width: 768px) {
+  .site-header__inner { justify-content: space-between; }
   .site-nav { display: flex; }
   .menu-btn { display: none; }
-  .site-header__cta { display: inline-flex; }
+  .site-header__cta { margin-left: 0; }
+  .site-header .site-header__cta { padding: 14px 28px; width: auto; height: auto; border-radius: var(--radius); box-shadow: 0 4px 0 var(--c-primary-dark); }
+  .site-header__cta-icon { display: none; }
+  .site-header__cta-label { display: inline; }
 }
 
 /* Mobile drawer */
@@ -344,6 +355,28 @@ ul, ol { margin: 0 0 1em; padding-left: 1.4em; }
 }
 .site-footer__social a:hover { background: var(--c-primary); color: var(--c-text); }
 .site-footer__social svg { width: 18px; height: 18px; }
+
+/* Language switcher (footer) */
+.lang-switch {
+  display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center;
+  border-top: 1px solid #2C3338;
+  padding-top: 24px; margin-bottom: 24px;
+}
+.lang-switch__label { color: #8C949A; font-size: 0.8rem; font-weight: 700; margin-right: 4px; }
+.lang-switch a { color: #8C949A; font-size: 0.86rem; font-weight: 600; transition: color 0.18s; }
+.lang-switch a:hover { color: #fff; }
+.lang-switch a.is-current { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+
+/* Language switcher (mobile drawer) */
+#mobile-menu .mobile-menu__lang {
+  display: flex; flex-wrap: wrap; gap: 8px 14px;
+  padding: 14px 24px 6px; margin-top: 6px;
+  border-top: 1px solid var(--c-border);
+}
+#mobile-menu .mobile-menu__lang a {
+  display: inline; padding: 0; font-size: 0.92rem; font-weight: 600; color: var(--c-text-sub);
+}
+#mobile-menu .mobile-menu__lang a.is-current { color: var(--c-text); text-decoration: underline; text-underline-offset: 3px; }
 
 /* ----- 16. Sub-page primitives ----- */
 .page-header {
