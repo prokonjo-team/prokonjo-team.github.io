@@ -9,6 +9,16 @@
     <meta name="theme-color" content="#FACD00" />
     <link rel="canonical" href="https://prokonjo.com/" />
 
+    <!-- hreflang alternates -->
+    <link rel="alternate" hreflang="ja" href="https://prokonjo.com/" />
+    <link rel="alternate" hreflang="en" href="https://prokonjo.com/en/" />
+    <link rel="alternate" hreflang="zh-Hant" href="https://prokonjo.com/zh/" />
+    <link rel="alternate" hreflang="fr" href="https://prokonjo.com/fr/" />
+    <link rel="alternate" hreflang="it" href="https://prokonjo.com/it/" />
+    <link rel="alternate" hreflang="es" href="https://prokonjo.com/es/" />
+    <link rel="alternate" hreflang="th" href="https://prokonjo.com/th/" />
+    <link rel="alternate" hreflang="x-default" href="https://prokonjo.com/" />
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="エクスプロラーズ" />
@@ -84,8 +94,9 @@
           <a href="#faq">FAQ</a>
           <a href="#contact">お問い合わせ</a>
         </nav>
-        <a class="btn site-header__cta" href="#download">
-          ダウンロード
+        <a class="btn site-header__cta" href="#download" aria-label="ダウンロード">
+          <svg class="site-header__cta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>
+          <span class="site-header__cta-label">ダウンロード</span>
         </a>
         <button class="menu-btn" type="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="メニューを開く">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
@@ -98,6 +109,15 @@
         <a href="#faq">FAQ</a>
         <a href="#contact">お問い合わせ</a>
         <a href="/privacy-policy/">プライバシーポリシー</a>
+        <div class="mobile-menu__lang" aria-label="言語 / Language">
+          <a href="/" hreflang="ja" lang="ja" class="is-current" aria-current="true">日本語</a>
+          <a href="/en/" hreflang="en" lang="en">English</a>
+          <a href="/zh/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+          <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+          <a href="/it/" hreflang="it" lang="it">Italiano</a>
+          <a href="/es/" hreflang="es" lang="es">Español</a>
+          <a href="/th/" hreflang="th" lang="th">ไทย</a>
+        </div>
       </div>
     </header>
 
@@ -385,6 +405,16 @@
             </ul>
           </div>
         </div>
+        <nav class="lang-switch" aria-label="言語 / Language">
+          <span class="lang-switch__label">言語</span>
+          <a href="/" hreflang="ja" lang="ja" class="is-current" aria-current="true">日本語</a>
+          <a href="/en/" hreflang="en" lang="en">English</a>
+          <a href="/zh/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+          <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+          <a href="/it/" hreflang="it" lang="it">Italiano</a>
+          <a href="/es/" hreflang="es" lang="es">Español</a>
+          <a href="/th/" hreflang="th" lang="th">ไทย</a>
+        </nav>
         <div class="site-footer__bottom">
           <span>© 2024-2026 プロ根性 (prokonjo). All rights reserved.</span>
           <div class="site-footer__social">
