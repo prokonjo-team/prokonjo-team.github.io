@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Explores｜El juego de paseos urbanos que convierte tu caminata en aventura</title>
-    <meta name="description" content="Explores, el juego de paseos urbanos que convierte tu caminata en una aventura. Guíate por una foto y camina hacia lugares que no conoces. Unos 15 minutos por partida, gratis y sin compras dentro de la app." />
+    <meta name="description" content="Explores, juego de caminar por geolocalización (GPS) que convierte tu paseo en aventura. Guíate por una foto, ~15 min por partida. Gratis y sin compras." />
     <meta name="author" content="Prokonjo" />
     <meta name="theme-color" content="#FACD00" />
     <link rel="canonical" href="https://prokonjo.com/es/" />
@@ -30,12 +30,20 @@
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:locale" content="es_ES" />
+    <meta property="og:locale:alternate" content="ja_JP" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale:alternate" content="zh_TW" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+    <meta property="og:locale:alternate" content="it_IT" />
+    <meta property="og:locale:alternate" content="th_TH" />
+    <meta property="og:image:alt" content="Explores — convierte tu paseo en una aventura" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Explores｜El juego de paseos urbanos que convierte tu caminata en aventura" />
     <meta name="twitter:description" content="Un juego de paseos urbanos en el que te guías por una foto para caminar hacia lugares que no conoces. Unos 15 minutos por partida, gratis y sin compras dentro de la app." />
     <meta name="twitter:image" content="https://prokonjo.com/assets/img/ogp.jpg" />
+    <meta name="twitter:image:alt" content="Explores — convierte tu paseo en una aventura" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/assets/favicon.png" />
@@ -52,22 +60,19 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "MobileApplication",
-        "name": "Explores",
-        "description": "Un juego de paseos urbanos que convierte tu caminata en una aventura. Te guías por una foto para caminar hacia lugares que no conoces: una experiencia de exploración de unos 15 minutos por partida.",
-        "url": "https://prokonjo.com/",
-        "applicationCategory": "GameApplication",
-        "operatingSystem": "iOS",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "JPY"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "Prokonjo",
-          "url": "https://prokonjo.com/"
-        }
+        "@graph": [
+          { "@type": "Organization", "@id": "https://prokonjo.com/#org", "name": "Prokonjo", "url": "https://prokonjo.com/", "logo": "https://prokonjo.com/assets/img/game-logo.png", "sameAs": ["https://x.com/geek_pjt"] },
+          { "@type": "WebSite", "@id": "https://prokonjo.com/es/#website", "url": "https://prokonjo.com/es/", "name": "Explores", "inLanguage": "es", "publisher": { "@id": "https://prokonjo.com/#org" } },
+          { "@type": "MobileApplication", "@id": "https://prokonjo.com/es/#app", "name": "Explores", "description": "Explores, juego de caminar por geolocalización (GPS) que convierte tu paseo en aventura. Guíate por una foto, ~15 min por partida. Gratis y sin compras.", "url": "https://prokonjo.com/es/", "inLanguage": "es", "applicationCategory": "GameApplication", "operatingSystem": "iOS", "installUrl": "https://apps.apple.com/app/id6477759574", "downloadUrl": "https://apps.apple.com/app/id6477759574", "screenshot": ["https://prokonjo.com/assets/img/game-play0.png","https://prokonjo.com/assets/img/game-play1.png","https://prokonjo.com/assets/img/game-play2.png"], "award": ["技育博 企業賞","和歌山イノベーションプログラミングコンテスト 最優秀賞","e-ZUKAスマートアプリコンテスト2023 飯塚市長賞・企業賞"], "offers": { "@type": "Offer", "price": "0", "priceCurrency": "JPY" }, "author": { "@id": "https://prokonjo.com/#org" }, "publisher": { "@id": "https://prokonjo.com/#org" } },
+          { "@type": "FAQPage", "@id": "https://prokonjo.com/es/#faq", "inLanguage": "es", "mainEntity": [
+            { "@type": "Question", "name": "¿De verdad es gratis? ¿Hay compras dentro de la app?", "acceptedAnswer": { "@type": "Answer", "text": "Es totalmente gratis. No hay ningún tipo de compra dentro de la app, ni gachas ni suscripciones. De momento tampoco mostramos anuncios." } },
+            { "@type": "Question", "name": "¿Cuánto dura una partida?", "acceptedAnswer": { "@type": "Answer", "text": "Puedes elegir entre 15, 20 o 30 minutos, según lo que te apetezca en ese momento. Sirve igual para un huequito corto que para un fin de semana en el que quieras caminar a tope." } },
+            { "@type": "Question", "name": "¿Dónde se puede jugar?", "acceptedAnswer": { "@type": "Answer", "text": "En general puedes disfrutarlo en cualquier zona urbana. A partir de tu información de GPS, se genera automáticamente una meta dentro de un radio al que puedas llegar caminando desde tu ubicación actual." } },
+            { "@type": "Question", "name": "¿Cuánto consume de datos y batería?", "acceptedAnswer": { "@type": "Answer", "text": "Como obtiene la ubicación de forma continua, jugar durante mucho tiempo tiende a gastar batería. El consumo de datos es sobre todo el de mostrar el mapa, así que no es excesivo." } },
+            { "@type": "Question", "name": "¿Qué precauciones debo tomar para jugar con seguridad?", "acceptedAnswer": { "@type": "Answer", "text": "Ten muchísimo cuidado de no manejar el móvil mientras caminas. Detente antes de cruzar los pasos de peatones, evita las calles oscuras y las zonas solitarias y, en general, respeta siempre las reglas básicas de seguridad al pasear." } },
+            { "@type": "Question", "name": "¿Hay versión para Android?", "acceptedAnswer": { "@type": "Answer", "text": "Ahora mismo estamos reconfigurando la publicación en Android, así que la búsqueda de probadores está pausada. Publicaremos una actualización en esta página en cuanto esté lista." } }
+          ] }
+        ]
       }
     </script>
 
@@ -144,7 +149,7 @@
           </p>
         </div>
         <div class="hero__visual">
-          <img src="/assets/img/game-desc.jpg" alt="Imagen de juego de Explores" width="1555" height="556" fetchpriority="high" />
+          <img src="/assets/img/game-desc.jpg" alt="Explores — juego de caminar por geolocalización (GPS) que convierte tu paseo en aventura" width="1555" height="556" fetchpriority="high" />
         </div>
       </div>
     </section>
@@ -207,19 +212,19 @@
         <div class="steps">
           <div class="step">
             <div class="step__num">1</div>
-            <img class="step__img" src="/assets/img/game-play0.png" alt="Pantalla de selección de tiempo" loading="lazy" />
+            <img class="step__img" src="/assets/img/game-play0.png" alt="Explores — pantalla de selección de tiempo del juego de caminar por geolocalización" loading="lazy" />
             <h3>Elige el tiempo</h3>
             <p>Elige cuánto quieres caminar. "15 minutos", "30 minutos"... lo que te apetezca en ese momento.</p>
           </div>
           <div class="step">
             <div class="step__num">2</div>
-            <img class="step__img" src="/assets/img/game-play1.png" alt="Pantalla para revisar las fotos y el mapa de los alrededores del destino" loading="lazy" />
+            <img class="step__img" src="/assets/img/game-play1.png" alt="Explores — pantalla para memorizar las fotos y el mapa del destino, juego de caminar por GPS" loading="lazy" />
             <h3>Memoriza el destino</h3>
             <p>Antes de empezar la partida, fíjate bien en las fotos y el mapa de los alrededores del destino. En cuanto empieces, desaparecen.</p>
           </div>
           <div class="step">
             <div class="step__num">3</div>
-            <img class="step__img" src="/assets/img/game-play2.png" alt="Pantalla del juego durante la exploración" loading="lazy" />
+            <img class="step__img" src="/assets/img/game-play2.png" alt="Explores — pantalla del juego durante la exploración a pie por geolocalización" loading="lazy" />
             <h3>Camina de memoria</h3>
             <p>Guíate solo por el tiempo restante y la distancia para llegar al destino. "¡Ey, ese es el paisaje de la foto!"</p>
           </div>

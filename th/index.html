@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Explores｜เกมเดินสำรวจเมืองที่เปลี่ยนการเดินเล่นให้เป็นการผจญภัย</title>
-    <meta name="description" content="Explores เกมเดินสำรวจเมืองที่เปลี่ยนการเดินเล่นธรรมดาให้กลายเป็นการผจญภัย ใช้รูปภาพเป็นใบ้แล้วเดินไปยังสถานที่ที่ไม่เคยรู้จัก เล่นรอบละราว 15 นาที ฟรี ไม่มีระบบเติมเงิน" />
+    <meta name="description" content="Explores เกมเดินสำรวจเมืองแบบใช้พิกัด GPS ที่เปลี่ยนการเดินเล่นธรรมดาให้กลายเป็นการผจญภัย ใช้รูปภาพเป็นใบ้แล้วเดินไปยังสถานที่ที่ไม่เคยรู้จัก เล่นรอบละราว 15 นาที ฟรี ไม่มีระบบเติมเงิน" />
     <meta name="author" content="Prokonjo" />
     <meta name="theme-color" content="#FACD00" />
     <link rel="canonical" href="https://prokonjo.com/th/" />
@@ -29,13 +29,21 @@
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Explores — เกมเดินสำรวจเมืองแบบใช้พิกัด GPS เปลี่ยนการเดินเล่นให้เป็นการผจญภัย" />
     <meta property="og:locale" content="th_TH" />
+    <meta property="og:locale:alternate" content="ja_JP" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale:alternate" content="zh_TW" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+    <meta property="og:locale:alternate" content="it_IT" />
+    <meta property="og:locale:alternate" content="es_ES" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Explores｜เกมเดินสำรวจเมืองที่เปลี่ยนการเดินเล่นให้เป็นการผจญภัย" />
     <meta name="twitter:description" content="เกมเดินสำรวจเมืองที่ใช้รูปภาพเป็นใบ้ แล้วเดินไปยังสถานที่ที่ไม่เคยรู้จัก เล่นรอบละราว 15 นาที ฟรี ไม่มีระบบเติมเงิน" />
     <meta name="twitter:image" content="https://prokonjo.com/assets/img/ogp.jpg" />
+    <meta name="twitter:image:alt" content="Explores — เกมเดินสำรวจเมืองแบบใช้พิกัด GPS เปลี่ยนการเดินเล่นให้เป็นการผจญภัย" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/assets/favicon.png" />
@@ -52,22 +60,19 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "MobileApplication",
-        "name": "Explores",
-        "description": "เกมเดินสำรวจเมืองที่เปลี่ยนการเดินเล่นให้เป็นการผจญภัย ใช้รูปภาพเป็นใบ้แล้วเดินไปยังสถานที่ที่ไม่เคยรู้จัก ประสบการณ์การสำรวจรอบละราว 15 นาที",
-        "url": "https://prokonjo.com/th/",
-        "applicationCategory": "GameApplication",
-        "operatingSystem": "iOS",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "JPY"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "Prokonjo",
-          "url": "https://prokonjo.com/"
-        }
+        "@graph": [
+          { "@type": "Organization", "@id": "https://prokonjo.com/#org", "name": "Prokonjo", "url": "https://prokonjo.com/", "logo": "https://prokonjo.com/assets/img/game-logo.png", "sameAs": ["https://x.com/geek_pjt"] },
+          { "@type": "WebSite", "@id": "https://prokonjo.com/th/#website", "url": "https://prokonjo.com/th/", "name": "Explores", "inLanguage": "th", "publisher": { "@id": "https://prokonjo.com/#org" } },
+          { "@type": "MobileApplication", "@id": "https://prokonjo.com/th/#app", "name": "Explores", "description": "Explores เกมเดินสำรวจเมืองแบบใช้พิกัด GPS ที่เปลี่ยนการเดินเล่นธรรมดาให้กลายเป็นการผจญภัย ใช้รูปภาพเป็นใบ้แล้วเดินไปยังสถานที่ที่ไม่เคยรู้จัก เล่นรอบละราว 15 นาที ฟรี ไม่มีระบบเติมเงิน", "url": "https://prokonjo.com/th/", "inLanguage": "th", "applicationCategory": "GameApplication", "operatingSystem": "iOS", "installUrl": "https://apps.apple.com/app/id6477759574", "downloadUrl": "https://apps.apple.com/app/id6477759574", "screenshot": ["https://prokonjo.com/assets/img/game-play0.png","https://prokonjo.com/assets/img/game-play1.png","https://prokonjo.com/assets/img/game-play2.png"], "award": ["技育博 企業賞","和歌山イノベーションプログラミングコンテスト 最優秀賞","e-ZUKAスマートアプリコンテスト2023 飯塚市長賞・企業賞"], "offers": { "@type": "Offer", "price": "0", "priceCurrency": "JPY" }, "author": { "@id": "https://prokonjo.com/#org" }, "publisher": { "@id": "https://prokonjo.com/#org" } },
+          { "@type": "FAQPage", "@id": "https://prokonjo.com/th/#faq", "inLanguage": "th", "mainEntity": [
+            { "@type": "Question", "name": "ฟรีจริงไหม? มีระบบเติมเงินหรือเปล่า?", "acceptedAnswer": { "@type": "Answer", "text": "ฟรีทั้งหมด ไม่มีระบบเติมเงินใด ๆ ทั้งกาชาหรือสมาชิกรายเดือน และตอนนี้ก็ยังไม่มีโฆษณาแสดงด้วย" } },
+            { "@type": "Question", "name": "เล่นหนึ่งรอบใช้เวลานานแค่ไหน?", "acceptedAnswer": { "@type": "Answer", "text": "เลือกได้ตามอารมณ์ในตอนนั้น เช่น 15 นาที 20 นาที หรือ 30 นาที จะเป็นช่วงเวลาว่างสั้น ๆ หรือวันหยุดที่อยากเดินยาว ๆ ก็เล่นได้ทั้งคู่" } },
+            { "@type": "Question", "name": "เล่นได้ในสถานที่แบบไหนบ้าง?", "acceptedAnswer": { "@type": "Answer", "text": "โดยพื้นฐานสนุกได้ทุกที่ที่อยู่ในเมือง ระบบจะสร้างจุดหมายที่เดินไปถึงได้จากตำแหน่งปัจจุบันโดยอัตโนมัติ โดยอ้างอิงจากข้อมูล GPS" } },
+            { "@type": "Question", "name": "ใช้ปริมาณเน็ตและแบตเตอรี่มากแค่ไหน?", "acceptedAnswer": { "@type": "Answer", "text": "เนื่องจากต้องดึงข้อมูลตำแหน่งต่อเนื่อง การเล่นเป็นเวลานานจึงทำให้แบตเตอรี่หมดเร็วขึ้น ส่วนปริมาณเน็ตส่วนใหญ่ใช้กับการแสดงแผนที่ ซึ่งไม่ได้มากเกินไป" } },
+            { "@type": "Question", "name": "มีข้อควรระวังเพื่อเล่นอย่างปลอดภัยไหม?", "acceptedAnswer": { "@type": "Answer", "text": "โปรดระมัดระวังอย่างยิ่งในการกดจอขณะเดิน กรุณาปฏิบัติตามกฎความปลอดภัยพื้นฐานในการเดินเล่นเสมอ เช่น หยุดยืนก่อนถึงทางม้าลาย และหลีกเลี่ยงทางเปลี่ยวยามค่ำคืนหรือพื้นที่ที่ไม่มีคน" } },
+            { "@type": "Question", "name": "มีเวอร์ชัน Android ไหม?", "acceptedAnswer": { "@type": "Answer", "text": "ขณะนี้เรากำลังจัดเตรียมการเผยแพร่บน Android ใหม่ จึงหยุดรับสมัครผู้ทดสอบชั่วคราว เราจะแจ้งให้ทราบที่หน้านี้เมื่อพร้อม" } }
+          ] }
+        ]
       }
     </script>
 
@@ -144,7 +149,7 @@
           </p>
         </div>
         <div class="hero__visual">
-          <img src="/assets/img/game-desc.jpg" alt="ภาพตัวอย่างการเล่น Explores" width="1555" height="556" fetchpriority="high" />
+          <img src="/assets/img/game-desc.jpg" alt="Explores — ภาพตัวอย่างการเล่นเกมเดินสำรวจเมืองแบบใช้พิกัด GPS" width="1555" height="556" fetchpriority="high" />
         </div>
       </div>
     </section>
@@ -207,19 +212,19 @@
         <div class="steps">
           <div class="step">
             <div class="step__num">1</div>
-            <img class="step__img" src="/assets/img/game-play0.png" alt="หน้าจอเลือกเวลา" loading="lazy" />
+            <img class="step__img" src="/assets/img/game-play0.png" alt="Explores เกมเดินสำรวจเมือง — หน้าจอเลือกเวลา" loading="lazy" />
             <h3>เลือกเวลา</h3>
             <p>เลือกเวลาที่อยากเดิน เช่น "15 นาที" "30 นาที" ตามอารมณ์ในตอนนั้น</p>
           </div>
           <div class="step">
             <div class="step__num">2</div>
-            <img class="step__img" src="/assets/img/game-play1.png" alt="หน้าจอตรวจสอบรูปภาพและแผนที่บริเวณจุดหมาย" loading="lazy" />
+            <img class="step__img" src="/assets/img/game-play1.png" alt="Explores เกมเดินสำรวจเมือง — หน้าจอตรวจสอบรูปภาพและแผนที่บริเวณจุดหมาย" loading="lazy" />
             <h3>จดจำจุดหมายให้ดี</h3>
             <p>ดูรูปภาพและแผนที่บริเวณจุดหมายให้ละเอียดก่อนเริ่มเกม พอเริ่มแล้วทั้งหมดจะถูกซ่อนไป</p>
           </div>
           <div class="step">
             <div class="step__num">3</div>
-            <img class="step__img" src="/assets/img/game-play2.png" alt="หน้าจอเกมระหว่างการสำรวจ" loading="lazy" />
+            <img class="step__img" src="/assets/img/game-play2.png" alt="Explores เกมเดินสำรวจเมือง — หน้าจอเกมระหว่างการสำรวจ" loading="lazy" />
             <h3>เดินโดยอาศัยความทรงจำ</h3>
             <p>เดินไปยังจุดหมายโดยมีแค่เวลาที่เหลือและระยะทางเป็นตัวช่วย "อ๊ะ นี่มันวิวในรูปนั่นนี่!"</p>
           </div>

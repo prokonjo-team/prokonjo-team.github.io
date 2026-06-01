@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Explores｜Il gioco di passeggiate urbane che trasforma la camminata in avventura</title>
-    <meta name="description" content="Explores, il gioco di passeggiate urbane che trasforma la tua camminata in un'avventura. Seguendo le foto come indizio, raggiungi a piedi luoghi che non conosci. Una partita dura circa 15 minuti, gratis e senza acquisti in-app." />
+    <meta name="description" content="Explores, il gioco di camminata in geolocalizzazione (GPS) che trasforma le passeggiate in avventura. Gratis, senza acquisti in-app, una partita in 15 minuti." />
     <meta name="author" content="Prokonjo" />
     <meta name="theme-color" content="#FACD00" />
     <link rel="canonical" href="https://prokonjo.com/it/" />
@@ -29,13 +29,21 @@
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Explores — il gioco di camminata in geolocalizzazione che trasforma le passeggiate in avventura" />
     <meta property="og:locale" content="it_IT" />
+    <meta property="og:locale:alternate" content="ja_JP" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale:alternate" content="zh_TW" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+    <meta property="og:locale:alternate" content="es_ES" />
+    <meta property="og:locale:alternate" content="th_TH" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Explores｜Il gioco di passeggiate urbane che trasforma la camminata in avventura" />
     <meta name="twitter:description" content="Il gioco di passeggiate urbane in cui, seguendo le foto come indizio, raggiungi a piedi luoghi che non conosci. Una partita dura circa 15 minuti, gratis e senza acquisti in-app." />
     <meta name="twitter:image" content="https://prokonjo.com/assets/img/ogp.jpg" />
+    <meta name="twitter:image:alt" content="Explores — il gioco di camminata in geolocalizzazione che trasforma le passeggiate in avventura" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/assets/favicon.png" />
@@ -52,22 +60,19 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "MobileApplication",
-        "name": "Explores",
-        "description": "Il gioco di passeggiate urbane che trasforma la camminata in avventura. Seguendo le foto come indizio, raggiungi a piedi luoghi che non conosci: un'esperienza di esplorazione di circa 15 minuti a partita.",
-        "url": "https://prokonjo.com/",
-        "applicationCategory": "GameApplication",
-        "operatingSystem": "iOS",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "JPY"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "Prokonjo",
-          "url": "https://prokonjo.com/"
-        }
+        "@graph": [
+          { "@type": "Organization", "@id": "https://prokonjo.com/#org", "name": "Prokonjo", "url": "https://prokonjo.com/", "logo": "https://prokonjo.com/assets/img/game-logo.png", "sameAs": ["https://x.com/geek_pjt"] },
+          { "@type": "WebSite", "@id": "https://prokonjo.com/it/#website", "url": "https://prokonjo.com/it/", "name": "Explores", "inLanguage": "it", "publisher": { "@id": "https://prokonjo.com/#org" } },
+          { "@type": "MobileApplication", "@id": "https://prokonjo.com/it/#app", "name": "Explores", "description": "Explores, il gioco di camminata in geolocalizzazione (GPS) che trasforma le passeggiate in avventura. Gratis, senza acquisti in-app, una partita in 15 minuti.", "url": "https://prokonjo.com/it/", "inLanguage": "it", "applicationCategory": "GameApplication", "operatingSystem": "iOS", "installUrl": "https://apps.apple.com/app/id6477759574", "downloadUrl": "https://apps.apple.com/app/id6477759574", "screenshot": ["https://prokonjo.com/assets/img/game-play0.png","https://prokonjo.com/assets/img/game-play1.png","https://prokonjo.com/assets/img/game-play2.png"], "award": ["技育博 企業賞","和歌山イノベーションプログラミングコンテスト 最優秀賞","e-ZUKAスマートアプリコンテスト2023 飯塚市長賞・企業賞"], "offers": { "@type": "Offer", "price": "0", "priceCurrency": "JPY" }, "author": { "@id": "https://prokonjo.com/#org" }, "publisher": { "@id": "https://prokonjo.com/#org" } },
+          { "@type": "FAQPage", "@id": "https://prokonjo.com/it/#faq", "inLanguage": "it", "mainEntity": [
+            { "@type": "Question", "name": "È davvero gratis? Ci sono acquisti in-app?", "acceptedAnswer": { "@type": "Answer", "text": "È completamente gratuito. Niente gacha, niente abbonamenti, nessun tipo di acquisto in-app. E per ora non mostriamo nemmeno pubblicità." } },
+            { "@type": "Question", "name": "Quanto dura una partita?", "acceptedAnswer": { "@type": "Answer", "text": "Puoi scegliere tra 15, 20 o 30 minuti, a seconda dell'umore del momento. Va bene sia per una breve pausa sia per una camminata intensa nel weekend." } },
+            { "@type": "Question", "name": "Dove si può giocare?", "acceptedAnswer": { "@type": "Answer", "text": "In linea di massima si gioca ovunque in città. In base al GPS, viene generata automaticamente una meta raggiungibile a piedi dalla tua posizione attuale." } },
+            { "@type": "Question", "name": "Quanti dati e quanta batteria consuma?", "acceptedAnswer": { "@type": "Answer", "text": "Poiché la posizione viene rilevata di continuo, le sessioni lunghe tendono a consumare più batteria. Il consumo di dati riguarda soprattutto la visualizzazione della mappa e non è eccessivo." } },
+            { "@type": "Question", "name": "Come giocare in sicurezza?", "acceptedAnswer": { "@type": "Answer", "text": "Fai sempre molta attenzione a non usare il telefono mentre cammini. Fermati prima degli attraversamenti pedonali, evita le strade buie e le zone poco frequentate, e rispetta sempre le regole di base per camminare in sicurezza." } },
+            { "@type": "Question", "name": "Esiste la versione Android?", "acceptedAnswer": { "@type": "Answer", "text": "Al momento stiamo riconfigurando la pubblicazione su Android, quindi il reclutamento dei tester è sospeso. Pubblicheremo un aggiornamento su questa pagina appena sarà pronto." } }
+          ] }
+        ]
       }
     </script>
 
@@ -144,7 +149,7 @@
           </p>
         </div>
         <div class="hero__visual">
-          <img src="/assets/img/game-desc.jpg" alt="Immagine di gioco di Explores" width="1555" height="556" fetchpriority="high" />
+          <img src="/assets/img/game-desc.jpg" alt="Explores — gioco di camminata in geolocalizzazione (GPS) per esplorare la città a piedi" width="1555" height="556" fetchpriority="high" />
         </div>
       </div>
     </section>
@@ -207,19 +212,19 @@
         <div class="steps">
           <div class="step">
             <div class="step__num">1</div>
-            <img class="step__img" src="/assets/img/game-play0.png" alt="Schermata di selezione del tempo" loading="lazy" />
+            <img class="step__img" src="/assets/img/game-play0.png" alt="Explores — schermata di selezione del tempo nel gioco di camminata in geolocalizzazione" loading="lazy" />
             <h3>Scegli il tempo</h3>
             <p>Seleziona quanto vuoi camminare. "15 minuti", "30 minuti"... a seconda dell'umore del momento.</p>
           </div>
           <div class="step">
             <div class="step__num">2</div>
-            <img class="step__img" src="/assets/img/game-play1.png" alt="Schermata di verifica delle foto e della mappa dei dintorni della meta" loading="lazy" />
+            <img class="step__img" src="/assets/img/game-play1.png" alt="Explores — foto e mappa dei dintorni della meta nel gioco di passeggiate urbane" loading="lazy" />
             <h3>Memorizza la meta</h3>
             <p>Prima di iniziare, osserva bene le foto e la mappa dei dintorni della meta. Una volta partito, spariscono.</p>
           </div>
           <div class="step">
             <div class="step__num">3</div>
-            <img class="step__img" src="/assets/img/game-play2.png" alt="Schermata di gioco durante l'esplorazione" loading="lazy" />
+            <img class="step__img" src="/assets/img/game-play2.png" alt="Explores — schermata di gioco mentre cammini verso la meta a piedi" loading="lazy" />
             <h3>Cammina affidandoti alla memoria</h3>
             <p>Con solo il tempo rimasto e la distanza come riferimento, raggiungi la meta a piedi. "Ehi, è proprio il paesaggio di quella foto!"</p>
           </div>
@@ -295,17 +300,17 @@
             </div>
           </div>
           <div class="member">
-            <img src="/assets/img/member-chang.png" alt="張珠煐" loading="lazy" width="96" height="96" />
+            <img src="/assets/img/member-chang.png" alt="Chang Ju-young" loading="lazy" width="96" height="96" />
             <h3>張珠煐</h3>
             <p>Designer</p>
           </div>
           <div class="member">
-            <img src="/assets/img/siteTop4.jpg" alt="楠本健人" loading="lazy" width="96" height="96" />
+            <img src="/assets/img/siteTop4.jpg" alt="Kento Kusumoto" loading="lazy" width="96" height="96" />
             <h3>楠本健人</h3>
             <p>Designer</p>
           </div>
           <div class="member">
-            <img src="/assets/img/member-hayashi.png" alt="林慎一郎" loading="lazy" width="96" height="96" />
+            <img src="/assets/img/member-hayashi.png" alt="Shinichiro Hayashi" loading="lazy" width="96" height="96" />
             <h3>林慎一郎</h3>
             <p>Ingegnere</p>
             <div class="member__links">

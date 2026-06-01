@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Explores｜把散步變成冒險的街頭探索遊戲</title>
-    <meta name="description" content="把散步變成冒險的街頭探索遊戲「Explores」。以照片為提示，走進陌生的地方一步步抵達目的地。一局約 15 分鐘、免費、無內購。" />
+    <meta name="description" content="把散步變成冒險的定位（GPS）街頭探索遊戲「Explores」。以照片為提示，走進陌生的地方一步步抵達目的地。一局約 15 分鐘、免費、無內購。" />
     <meta name="author" content="Prokonjo" />
     <meta name="theme-color" content="#FACD00" />
     <link rel="canonical" href="https://prokonjo.com/zh/" />
@@ -29,13 +29,21 @@
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Explores — 把散步變成冒險的定位街頭探索遊戲" />
     <meta property="og:locale" content="zh_TW" />
+    <meta property="og:locale:alternate" content="ja_JP" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+    <meta property="og:locale:alternate" content="it_IT" />
+    <meta property="og:locale:alternate" content="es_ES" />
+    <meta property="og:locale:alternate" content="th_TH" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Explores｜把散步變成冒險的街頭探索遊戲" />
     <meta name="twitter:description" content="以照片為提示，走進陌生的地方一步步抵達目的地的街頭探索遊戲。一局約 15 分鐘、免費、無內購。" />
     <meta name="twitter:image" content="https://prokonjo.com/assets/img/ogp.jpg" />
+    <meta name="twitter:image:alt" content="Explores — 把散步變成冒險的定位街頭探索遊戲" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/assets/favicon.png" />
@@ -52,22 +60,19 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "MobileApplication",
-        "name": "Explores",
-        "description": "把散步變成冒險的街頭探索遊戲。以照片為提示，走進陌生的地方一步步抵達目的地，一局約 15 分鐘的探索體驗。",
-        "url": "https://prokonjo.com/",
-        "applicationCategory": "GameApplication",
-        "operatingSystem": "iOS",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "JPY"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "Prokonjo",
-          "url": "https://prokonjo.com/"
-        }
+        "@graph": [
+          { "@type": "Organization", "@id": "https://prokonjo.com/#org", "name": "Prokonjo", "url": "https://prokonjo.com/", "logo": "https://prokonjo.com/assets/img/game-logo.png", "sameAs": ["https://x.com/geek_pjt"] },
+          { "@type": "WebSite", "@id": "https://prokonjo.com/zh/#website", "url": "https://prokonjo.com/zh/", "name": "Explores", "inLanguage": "zh-Hant", "publisher": { "@id": "https://prokonjo.com/#org" } },
+          { "@type": "MobileApplication", "@id": "https://prokonjo.com/zh/#app", "name": "Explores", "description": "把散步變成冒險的定位（GPS）街頭探索遊戲「Explores」。以照片為提示，走進陌生的地方一步步抵達目的地。一局約 15 分鐘、免費、無內購。", "url": "https://prokonjo.com/zh/", "inLanguage": "zh-Hant", "applicationCategory": "GameApplication", "operatingSystem": "iOS", "installUrl": "https://apps.apple.com/app/id6477759574", "downloadUrl": "https://apps.apple.com/app/id6477759574", "screenshot": ["https://prokonjo.com/assets/img/game-play0.png","https://prokonjo.com/assets/img/game-play1.png","https://prokonjo.com/assets/img/game-play2.png"], "award": ["技育博 企業賞","和歌山イノベーションプログラミングコンテスト 最優秀賞","e-ZUKAスマートアプリコンテスト2023 飯塚市長賞・企業賞"], "offers": { "@type": "Offer", "price": "0", "priceCurrency": "JPY" }, "author": { "@id": "https://prokonjo.com/#org" }, "publisher": { "@id": "https://prokonjo.com/#org" } },
+          { "@type": "FAQPage", "@id": "https://prokonjo.com/zh/#faq", "inLanguage": "zh-Hant", "mainEntity": [
+            { "@type": "Question", "name": "真的免費嗎？有任何內購嗎？", "acceptedAnswer": { "@type": "Answer", "text": "完全免費。沒有任何轉蛋、訂閱等內購項目。目前也不會顯示任何廣告。" } },
+            { "@type": "Question", "name": "玩一局要多久？", "acceptedAnswer": { "@type": "Answer", "text": "可從 15 分鐘、20 分鐘、30 分鐘等選項中，依當下心情自由選擇。無論是短暫的空檔，還是想盡情走的假日，都能對應。" } },
+            { "@type": "Question", "name": "在什麼地方可以玩？", "acceptedAnswer": { "@type": "Answer", "text": "只要在街區內，基本上到哪都能玩。系統會依 GPS 資訊，自動生成從你目前位置走得到的目的地範圍。" } },
+            { "@type": "Question", "name": "數據用量與電池消耗大概多少？", "acceptedAnswer": { "@type": "Answer", "text": "由於會持續取得定位資訊，長時間遊玩時電池確實比較容易耗電。數據用量主要來自地圖顯示，並不會太龐大。" } },
+            { "@type": "Question", "name": "安全遊玩有哪些注意事項？", "acceptedAnswer": { "@type": "Answer", "text": "請務必避免邊走邊操作手機。過斑馬線前先停下腳步、避開夜路與人煙稀少的區域等等，散步時的基本安全守則請一定要遵守。" } },
+            { "@type": "Question", "name": "有 Android 版嗎？", "acceptedAnswer": { "@type": "Answer", "text": "目前正在重新整理 Android 的發佈環境，暫停招募測試者。準備就緒後將於這個頁面公布。" } }
+          ] }
+        ]
       }
     </script>
 
@@ -144,7 +149,7 @@
           </p>
         </div>
         <div class="hero__visual">
-          <img src="/assets/img/game-desc.jpg" alt="Explores 的遊玩示意圖" width="1555" height="556" fetchpriority="high" />
+          <img src="/assets/img/game-desc.jpg" alt="Explores 的遊玩示意圖｜定位（GPS）街頭探索遊戲" width="1555" height="556" fetchpriority="high" />
         </div>
       </div>
     </section>
@@ -207,19 +212,19 @@
         <div class="steps">
           <div class="step">
             <div class="step__num">1</div>
-            <img class="step__img" src="/assets/img/game-play0.png" alt="時間選擇畫面" loading="lazy" />
+            <img class="step__img" src="/assets/img/game-play0.png" alt="Explores 的時間選擇畫面｜街頭探索遊戲" loading="lazy" />
             <h3>選擇時間</h3>
             <p>選一段想走的時間，「15 分鐘」「30 分鐘」⋯⋯依當下的心情自由決定。</p>
           </div>
           <div class="step">
             <div class="step__num">2</div>
-            <img class="step__img" src="/assets/img/game-play1.png" alt="確認目的地周邊照片與地圖的畫面" loading="lazy" />
+            <img class="step__img" src="/assets/img/game-play1.png" alt="Explores 確認目的地周邊照片與地圖的畫面｜街頭探索遊戲" loading="lazy" />
             <h3>記住目的地</h3>
             <p>遊戲開始前，先把目的地周邊的照片與地圖看仔細。一旦開始，它們就會被藏起來。</p>
           </div>
           <div class="step">
             <div class="step__num">3</div>
-            <img class="step__img" src="/assets/img/game-play2.png" alt="探索中的遊戲畫面" loading="lazy" />
+            <img class="step__img" src="/assets/img/game-play2.png" alt="Explores 探索中的遊戲畫面｜定位街頭探索遊戲" loading="lazy" />
             <h3>憑記憶往前走</h3>
             <p>只靠剩餘時間與距離，朝目的地前進。「啊，就是那張照片裡的景色！」</p>
           </div>
