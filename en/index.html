@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Explores｜The walking game that turns strolls into adventures</title>
-    <meta name="description" content="Explores is the walking game that turns an ordinary stroll into an adventure. Use a photo as your only clue and walk to a place you've never been. About 15 minutes per round. Free, with no in-app purchases." />
+    <meta name="description" content="Explores is a location-based GPS walking game that turns a stroll into an adventure: one photo is your clue. About 15 min a round. Free, no in-app purchases." />
     <meta name="author" content="Prokonjo" />
     <meta name="theme-color" content="#FACD00" />
     <link rel="canonical" href="https://prokonjo.com/en/" />
@@ -29,13 +29,21 @@
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Explores — the location-based walking game that turns a stroll into an adventure" />
     <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="ja_JP" />
+    <meta property="og:locale:alternate" content="zh_TW" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+    <meta property="og:locale:alternate" content="it_IT" />
+    <meta property="og:locale:alternate" content="es_ES" />
+    <meta property="og:locale:alternate" content="th_TH" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Explores｜The walking game that turns strolls into adventures" />
     <meta name="twitter:description" content="A walking game where a single photo is your clue to reach a place you've never been. About 15 minutes per round. Free, with no in-app purchases." />
     <meta name="twitter:image" content="https://prokonjo.com/assets/img/ogp.jpg" />
+    <meta name="twitter:image:alt" content="Explores — the location-based walking game that turns a stroll into an adventure" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/assets/favicon.png" />
@@ -52,22 +60,19 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "MobileApplication",
-        "name": "Explores",
-        "description": "The walking game that turns a stroll into an adventure. Use a photo as your clue to reach a place you've never been — an exploration experience that takes about 15 minutes per round.",
-        "url": "https://prokonjo.com/",
-        "applicationCategory": "GameApplication",
-        "operatingSystem": "iOS",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "JPY"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "Prokonjo",
-          "url": "https://prokonjo.com/"
-        }
+        "@graph": [
+          { "@type": "Organization", "@id": "https://prokonjo.com/#org", "name": "Prokonjo", "url": "https://prokonjo.com/", "logo": "https://prokonjo.com/assets/img/game-logo.png", "sameAs": ["https://x.com/geek_pjt"] },
+          { "@type": "WebSite", "@id": "https://prokonjo.com/en/#website", "url": "https://prokonjo.com/en/", "name": "Explores", "inLanguage": "en", "publisher": { "@id": "https://prokonjo.com/#org" } },
+          { "@type": "MobileApplication", "@id": "https://prokonjo.com/en/#app", "name": "Explores", "description": "Explores is a location-based GPS walking game that turns a stroll into an adventure: one photo is your clue. About 15 min a round. Free, no in-app purchases.", "url": "https://prokonjo.com/en/", "inLanguage": "en", "applicationCategory": "GameApplication", "operatingSystem": "iOS", "installUrl": "https://apps.apple.com/app/id6477759574", "downloadUrl": "https://apps.apple.com/app/id6477759574", "screenshot": ["https://prokonjo.com/assets/img/game-play0.png","https://prokonjo.com/assets/img/game-play1.png","https://prokonjo.com/assets/img/game-play2.png"], "award": ["技育博 企業賞","和歌山イノベーションプログラミングコンテスト 最優秀賞","e-ZUKAスマートアプリコンテスト2023 飯塚市長賞・企業賞"], "offers": { "@type": "Offer", "price": "0", "priceCurrency": "JPY" }, "author": { "@id": "https://prokonjo.com/#org" }, "publisher": { "@id": "https://prokonjo.com/#org" } },
+          { "@type": "FAQPage", "@id": "https://prokonjo.com/en/#faq", "inLanguage": "en", "mainEntity": [
+            { "@type": "Question", "name": "Is it really free? Are there any in-app purchases?", "acceptedAnswer": { "@type": "Answer", "text": "It's completely free. There are no in-app purchases of any kind — no gacha, no subscriptions. And for now, we're not showing ads either." } },
+            { "@type": "Question", "name": "How long does one round take?", "acceptedAnswer": { "@type": "Answer", "text": "You can choose from options like 15, 20, or 30 minutes to match your mood. It works just as well for a quick break as for a weekend when you want to really put in the miles." } },
+            { "@type": "Question", "name": "Where can I play?", "acceptedAnswer": { "@type": "Answer", "text": "Pretty much anywhere in town. Based on your GPS location, the game automatically generates goals within walking distance of where you are." } },
+            { "@type": "Question", "name": "How much data and battery does it use?", "acceptedAnswer": { "@type": "Answer", "text": "Because it tracks your location continuously, longer sessions will drain your battery faster. Data use is mostly for displaying the map and isn't excessive." } },
+            { "@type": "Question", "name": "Any safety tips for playing?", "acceptedAnswer": { "@type": "Answer", "text": "Please take great care not to use your phone while walking. Stop before crosswalks, avoid dark or deserted areas, and always follow the basic safety rules of any walk." } },
+            { "@type": "Question", "name": "Is there an Android version?", "acceptedAnswer": { "@type": "Answer", "text": "We're currently rebuilding our Android release setup, so tester recruitment is paused for now. We'll post an update on this page as soon as it's ready." } }
+          ] }
+        ]
       }
     </script>
 
@@ -144,7 +149,7 @@
           </p>
         </div>
         <div class="hero__visual">
-          <img src="/assets/img/game-desc.jpg" alt="A look at Explores gameplay" width="1555" height="556" fetchpriority="high" />
+          <img src="/assets/img/game-desc.jpg" alt="Explores — location-based walking game gameplay" width="1555" height="556" fetchpriority="high" />
         </div>
       </div>
     </section>
@@ -207,19 +212,19 @@
         <div class="steps">
           <div class="step">
             <div class="step__num">1</div>
-            <img class="step__img" src="/assets/img/game-play0.png" alt="Time selection screen" loading="lazy" />
+            <img class="step__img" src="/assets/img/game-play0.png" alt="Explores walking game — time selection screen" loading="lazy" />
             <h3>Pick your time</h3>
             <p>Choose how long you want to walk. "15 minutes," "30 minutes" — whatever suits your mood.</p>
           </div>
           <div class="step">
             <div class="step__num">2</div>
-            <img class="step__img" src="/assets/img/game-play1.png" alt="Screen for reviewing the photo and map near the destination" loading="lazy" />
+            <img class="step__img" src="/assets/img/game-play1.png" alt="Explores walking game — photo and map of the destination to memorize" loading="lazy" />
             <h3>Memorize the destination</h3>
             <p>Study the photo and map around your destination carefully before you start. Once the round begins, they're hidden.</p>
           </div>
           <div class="step">
             <div class="step__num">3</div>
-            <img class="step__img" src="/assets/img/game-play2.png" alt="In-game screen while exploring" loading="lazy" />
+            <img class="step__img" src="/assets/img/game-play2.png" alt="Explores walking game — in-game screen while exploring on foot" loading="lazy" />
             <h3>Walk from memory</h3>
             <p>With only the remaining time and distance to guide you, walk to your destination. "There — that's the view from the photo!"</p>
           </div>

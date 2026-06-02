@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>エクスプロラーズ｜散歩を冒険にする街歩きゲーム</title>
-    <meta name="description" content="散歩を冒険にする街歩きゲーム「エクスプロラーズ」。写真をヒントに、知らない場所を歩いて目指そう。1プレイ約15分・無料・課金要素なし。" />
+    <title>エクスプローラーズ｜散歩を冒険にする街歩きゲーム</title>
+    <meta name="description" content="散歩を冒険にする街歩きゲーム「エクスプローラーズ」。位置情報ゲーム／散歩アプリとして、写真をヒントに知らない場所を歩いて目指そう。1プレイ約15分・無料・課金要素なし。" />
     <meta name="author" content="プロ根性 (prokonjo)" />
     <meta name="theme-color" content="#FACD00" />
     <link rel="canonical" href="https://prokonjo.com/" />
@@ -21,21 +21,29 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="エクスプロラーズ" />
-    <meta property="og:title" content="エクスプロラーズ｜散歩を冒険にする街歩きゲーム" />
+    <meta property="og:site_name" content="エクスプローラーズ" />
+    <meta property="og:title" content="エクスプローラーズ｜散歩を冒険にする街歩きゲーム" />
     <meta property="og:description" content="写真をヒントに、知らない場所を歩いて目指す街歩きゲーム。1プレイ約15分・無料・課金要素なし。" />
     <meta property="og:url" content="https://prokonjo.com/" />
     <meta property="og:image" content="https://prokonjo.com/assets/img/ogp.jpg" />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="エクスプローラーズ — 散歩を冒険にする街歩きゲーム" />
     <meta property="og:locale" content="ja_JP" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale:alternate" content="zh_TW" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+    <meta property="og:locale:alternate" content="it_IT" />
+    <meta property="og:locale:alternate" content="es_ES" />
+    <meta property="og:locale:alternate" content="th_TH" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="エクスプロラーズ｜散歩を冒険にする街歩きゲーム" />
+    <meta name="twitter:title" content="エクスプローラーズ｜散歩を冒険にする街歩きゲーム" />
     <meta name="twitter:description" content="写真をヒントに、知らない場所を歩いて目指す街歩きゲーム。1プレイ約15分・無料・課金要素なし。" />
     <meta name="twitter:image" content="https://prokonjo.com/assets/img/ogp.jpg" />
+    <meta name="twitter:image:alt" content="エクスプローラーズ — 散歩を冒険にする街歩きゲーム" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/assets/favicon.png" />
@@ -50,25 +58,22 @@
 
     <!-- Structured data -->
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "MobileApplication",
-        "name": "エクスプロラーズ",
-        "description": "散歩を冒険にする街歩きゲーム。写真をヒントに知らない場所へ歩いて目指す、1プレイ約15分の探索体験。",
-        "url": "https://prokonjo.com/",
-        "applicationCategory": "GameApplication",
-        "operatingSystem": "iOS",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "JPY"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "プロ根性",
-          "url": "https://prokonjo.com/"
-        }
-      }
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    { "@type": "Organization", "@id": "https://prokonjo.com/#org", "name": "プロ根性", "url": "https://prokonjo.com/", "logo": "https://prokonjo.com/assets/img/game-logo.png", "sameAs": ["https://x.com/geek_pjt"] },
+    { "@type": "WebSite", "@id": "https://prokonjo.com/#website", "url": "https://prokonjo.com/", "name": "エクスプローラーズ", "inLanguage": "ja", "publisher": { "@id": "https://prokonjo.com/#org" } },
+    { "@type": "MobileApplication", "@id": "https://prokonjo.com/#app", "name": "エクスプローラーズ", "alternateName": "エクスプロラーズ", "description": "散歩を冒険にする街歩きゲーム「エクスプローラーズ」。位置情報ゲーム／散歩アプリとして、写真をヒントに知らない場所を歩いて目指そう。1プレイ約15分・無料・課金要素なし。", "url": "https://prokonjo.com/", "inLanguage": "ja", "applicationCategory": "GameApplication", "operatingSystem": "iOS", "installUrl": "https://apps.apple.com/app/id6477759574", "downloadUrl": "https://apps.apple.com/app/id6477759574", "screenshot": ["https://prokonjo.com/assets/img/game-play0.png","https://prokonjo.com/assets/img/game-play1.png","https://prokonjo.com/assets/img/game-play2.png"], "award": ["技育博 企業賞","和歌山イノベーションプログラミングコンテスト 最優秀賞","e-ZUKAスマートアプリコンテスト2023 飯塚市長賞・企業賞"], "offers": { "@type": "Offer", "price": "0", "priceCurrency": "JPY" }, "author": { "@id": "https://prokonjo.com/#org" }, "publisher": { "@id": "https://prokonjo.com/#org" } },
+    { "@type": "FAQPage", "@id": "https://prokonjo.com/#faq", "inLanguage": "ja", "mainEntity": [
+      { "@type": "Question", "name": "本当に無料？課金要素はありますか？", "acceptedAnswer": { "@type": "Answer", "text": "完全無料です。ガチャやサブスクなど、いかなる課金要素もありません。広告も今のところ表示していません。" } },
+      { "@type": "Question", "name": "1プレイにかかる時間は？", "acceptedAnswer": { "@type": "Answer", "text": "15分・20分・30分などの中から、その時の気分に合わせて選べます。短い空き時間でもガッツリ歩きたい休日でも、両方行けます。" } },
+      { "@type": "Question", "name": "どんな場所で遊べますか？", "acceptedAnswer": { "@type": "Answer", "text": "街中であれば基本どこでも楽しめます。GPS情報を元に、現在地から歩いて辿り着ける範囲のゴールが自動生成されます。" } },
+      { "@type": "Question", "name": "通信量・バッテリー消費はどのくらい？", "acceptedAnswer": { "@type": "Answer", "text": "位置情報を継続的に取得するので、長時間プレイするとバッテリーは消費しやすくなります。通信量は地図表示分が中心で、過大ではありません。" } },
+      { "@type": "Question", "name": "安全に遊ぶための注意点は？", "acceptedAnswer": { "@type": "Answer", "text": "歩きながらの操作にはくれぐれもご注意ください。横断歩道の手前では立ち止まる、夜道や人気のないエリアは避ける、など基本的な散歩の安全ルールを必ず守ってください。" } },
+      { "@type": "Question", "name": "Android 版はありますか？", "acceptedAnswer": { "@type": "Answer", "text": "現在、Android版は配信の準備を整え直しているところで、テスター募集を一時停止しています。準備が整い次第、こちらのページでご案内します。" } }
+    ] }
+  ]
+}
     </script>
 
     <!-- Google Analytics -->
@@ -84,9 +89,9 @@
     <!-- ==================== Header ==================== -->
     <header class="site-header">
       <div class="container site-header__inner">
-        <a class="site-header__brand" href="#top" aria-label="エクスプロラーズ ホーム">
+        <a class="site-header__brand" href="#top" aria-label="エクスプローラーズ ホーム">
           <span class="site-header__brand-mark" aria-hidden="true">🧭</span>
-          <span>エクスプロラーズ</span>
+          <span>エクスプローラーズ</span>
         </a>
         <nav class="site-nav" aria-label="メインメニュー">
           <a href="#about">特徴</a>
@@ -130,7 +135,7 @@
           <h1 class="hero__title">散歩を、<em>冒険</em>にする。</h1>
           <p class="hero__sub">
             写真をヒントに、知らない場所を歩いて目指そう。<br />
-            1プレイ約15分。無料・課金要素なしの街歩きゲームです。
+            位置情報（GPS）を使った散歩アプリ。1プレイ約15分、無料・課金要素なしの街歩きゲームです。
           </p>
           <div class="hero__cta">
             <a class="app-badge" href="https://apps.apple.com/jp/app/%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%97%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC%E3%82%BA/id6477759574" aria-label="App Store からダウンロード">
@@ -144,7 +149,7 @@
           </p>
         </div>
         <div class="hero__visual">
-          <img src="/assets/img/game-desc.jpg" alt="エクスプロラーズのプレイイメージ" width="1555" height="556" fetchpriority="high" />
+          <img src="/assets/img/game-desc.jpg" alt="エクスプローラーズのプレイイメージ｜位置情報を使った街歩きゲーム" width="1555" height="556" fetchpriority="high" />
         </div>
       </div>
     </section>
@@ -177,7 +182,7 @@
     <!-- ==================== Value ==================== -->
     <section class="section">
       <div class="container">
-        <h2 class="section__title">エクスプロラーズなら、<br />散歩が冒険になる。</h2>
+        <h2 class="section__title">エクスプローラーズなら、<br />散歩が冒険になる。</h2>
         <p class="section__lead">写真というヒントだけで、知らない場所を目指す。<br />毎回違うゴール。15分で完結。「歩く理由」が、ここにある。</p>
         <div class="card-grid">
           <div class="value-card">
@@ -207,19 +212,19 @@
         <div class="steps">
           <div class="step">
             <div class="step__num">1</div>
-            <img class="step__img" src="/assets/img/game-play0.png" alt="時間選択画面" loading="lazy" />
+            <img class="step__img" src="/assets/img/game-play0.png" alt="時間選択画面｜位置情報を使った街歩きゲーム エクスプローラーズ" loading="lazy" />
             <h3>時間を選ぶ</h3>
             <p>歩きたい時間を選択。「15分」「30分」など、その時の気分に合わせて。</p>
           </div>
           <div class="step">
             <div class="step__num">2</div>
-            <img class="step__img" src="/assets/img/game-play1.png" alt="目的地周辺の写真と地図の確認画面" loading="lazy" />
+            <img class="step__img" src="/assets/img/game-play1.png" alt="目的地周辺の写真と地図の確認画面｜散歩アプリ エクスプローラーズ" loading="lazy" />
             <h3>目的地を覚える</h3>
             <p>目的地周辺の写真と地図を、ゲーム開始前にしっかり確認。スタートしたら隠れます。</p>
           </div>
           <div class="step">
             <div class="step__num">3</div>
-            <img class="step__img" src="/assets/img/game-play2.png" alt="探索中のゲーム画面" loading="lazy" />
+            <img class="step__img" src="/assets/img/game-play2.png" alt="探索中のゲーム画面｜位置情報を使った街歩きゲーム エクスプローラーズ" loading="lazy" />
             <h3>記憶を頼りに歩く</h3>
             <p>残り時間と距離だけを頼りに、目的地まで歩こう。「あっ、あの写真の景色だ！」</p>
           </div>
@@ -230,10 +235,10 @@
     <!-- ==================== Video ==================== -->
     <section class="section">
       <div class="container">
-        <h2 class="section__title">動画で見るエクスプロラーズ</h2>
+        <h2 class="section__title">動画で見るエクスプローラーズ</h2>
         <p class="section__lead">実際のプレイ画面と街歩きの様子をどうぞ。</p>
         <div class="video-wrap">
-          <iframe src="https://www.youtube.com/embed/ldIJdk3zwHY?si=jwntDJV8pnRAHKio" title="エクスプロラーズの遊び方紹介動画" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/ldIJdk3zwHY?si=jwntDJV8pnRAHKio" title="エクスプローラーズの遊び方紹介動画" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </div>
     </section>
@@ -249,7 +254,7 @@
             <div class="award__body">
               <span class="award__tag">企業賞</span>
               <h3>技育博</h3>
-              <p>サポーターズ主催の技育博において、エクスプロラーズが企業賞を受賞しました。</p>
+              <p>サポーターズ主催の技育博において、エクスプローラーズが企業賞を受賞しました。</p>
               <a class="award__link" href="https://x.com/geek_pjt/status/1789225529109057540" target="_blank" rel="noopener noreferrer">受賞ポストを見る →</a>
             </div>
           </article>
@@ -373,7 +378,7 @@
         <p class="section__lead">不具合報告、ご感想、コラボのご相談など、お気軽にどうぞ。</p>
         <div class="contact-card">
           <p>以下のボタンからメールでご連絡ください。</p>
-          <a class="btn btn--lg" href="mailto:akmatsutaiki@gmail.com?subject=%E3%80%90%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%97%E3%83%AD%E3%83%A9%E3%83%BC%E3%82%BA%E3%80%91%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">
+          <a class="btn btn--lg" href="mailto:akmatsutaiki@gmail.com?subject=%E3%80%90%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%97%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC%E3%82%BA%E3%80%91%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">
             メールで問い合わせる
           </a>
         </div>
@@ -385,8 +390,8 @@
       <div class="container">
         <div class="site-footer__grid">
           <div>
-            <div class="site-footer__brand">エクスプロラーズ</div>
-            <p class="site-footer__brand-line">散歩を冒険にする街歩きゲーム。<br />by プロ根性 (prokonjo)</p>
+            <div class="site-footer__brand">エクスプローラーズ</div>
+            <p class="site-footer__brand-line">散歩を冒険にする街歩きゲーム「エクスプローラーズ（エクスプロラーズ）」。<br />by プロ根性 (prokonjo)</p>
           </div>
           <div class="site-footer__col">
             <h4>サイト</h4>
